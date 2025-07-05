@@ -11,7 +11,6 @@ model = ChatGroq(
     model="llama3-70b-8192",
     groq_api_key=groq_key  
 )
-
 result = model.invoke("I am feeling tired")
 print("Full result:")
 print(result)
