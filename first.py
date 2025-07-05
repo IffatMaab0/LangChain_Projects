@@ -14,8 +14,7 @@ model = ChatGroq(
     groq_api_key=groq_key  
 )
 
-result = model.invoke("I am feeling tired")
-print("Full result:")
-print(result)
-print("Content only:")
-print(result.content)
+result = model.invoke("I am feeling stuck")
+print("Full result:", result)
+print("content only: ", result.content)
+
