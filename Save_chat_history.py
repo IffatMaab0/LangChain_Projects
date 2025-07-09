@@ -9,6 +9,6 @@ load_dotenv()
 groq_key = os.environ["GROQ_API_KEY"]
 
 model = ChatGroq(
-    model="llama3-70b-8192",
+    model="llama3-70b-8192",    ##LLM
     groq_api_key=groq_key  
 )
