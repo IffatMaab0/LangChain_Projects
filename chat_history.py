@@ -13,7 +13,7 @@ model = ChatGroq(
     groq_api_key=groq_key  
 )
 chat_history = []       
-
+## specialized
 system_message = SystemMessage(content="You are expert in building AI agents via coding and good Teacher of programmer")
 chat_history.append(system_message)
 
