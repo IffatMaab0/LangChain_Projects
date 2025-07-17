@@ -12,3 +12,4 @@ model = ChatGroq(
     model="llama3-70b-8192",    
     groq_api_key=groq_key  
 )
+##still learning
