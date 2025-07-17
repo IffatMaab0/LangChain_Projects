@@ -12,5 +12,5 @@ llm = ChatGroq(
 )
 prompt = PromptTemplate.from_template("what is the capital of {place}")
 pipeline = prompt | llm
-output = pipeline.invoke("india")
+output = pipeline.invoke("pakistan")
 print(output.content)
