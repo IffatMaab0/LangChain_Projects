@@ -11,10 +11,10 @@ groq_key = os.environ["GROQ_API_KEY"]
 
 model = ChatGroq(
     model="llama3-70b-8192",
-    groq_api_key=groq_key  
+    groq_api_key=groq_key 
 )
 
-result = model.invoke("I am feeling stuck")
+result = model.invoke("hi, how are you?")
 print("Full result:", result)
 print("content only: ", result.content)
 
