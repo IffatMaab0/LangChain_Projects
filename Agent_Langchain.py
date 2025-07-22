@@ -24,6 +24,8 @@ def get_weather(city: str) -> str:
         desc= data["weather"][0]["description"]
         return f"{city}'s temperature is {temp}°C with {desc}."
     else:
+        print(f"Status Code: {res.status_code}")
+        print(f"Response: {data}")
         return "Failed to fetch weather"
 llm = ChatGroq(
     model = "llama3-70b-8192",

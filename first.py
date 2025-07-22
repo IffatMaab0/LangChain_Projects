@@ -14,7 +14,8 @@ model = ChatGroq(
     groq_api_key=groq_key 
 )
 
-result = model.invoke("hi, how are you?")
-print("Full result:", result)
-print("content only: ", result.content)
+while True:
+   ques = input("Ask a Question \n")
+   result = model.invoke(ques)
+   print(result.content)
 
